@@ -49,10 +49,14 @@
         <e p="Scripts" t="Include">
           <e p="PlayScene" t="Include">
             <e p="Controllers" t="Include">
+              <e p="Enviroment" t="Include">
+                <e p="CheckPointController.cs" t="Include" />
+              </e>
               <e p="Player" t="Include">
                 <e p="GrabSystem" t="Include">
                   <e p="GrabController.cs" t="Include" />
                   <e p="interactiveBox.cs" t="Include" />
+                  <e p="interactiveCharger.cs" t="Include" />
                   <e p="interactiveObject.cs" t="Include" />
                 </e>
                 <e p="Movement" t="Include">
@@ -60,7 +64,17 @@
                   <e p="FixedTouchField.cs" t="Include" />
                   <e p="MovementController.cs" t="Include" />
                 </e>
+                <e p="Other" t="Include">
+                  <e p="HealthSystem.cs" t="Include" />
+                </e>
+                <e p="UI" t="Include">
+                  <e p="HealthBar.cs" t="Include" />
+                </e>
               </e>
+            </e>
+            <e p="Managers" t="Include">
+              <e p="Player.cs" t="Include" />
+              <e p="SaveLoadManager.cs" t="Include" />
             </e>
           </e>
         </e>

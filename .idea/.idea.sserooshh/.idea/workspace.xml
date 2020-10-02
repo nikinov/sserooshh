@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b02b08-8a6b-42b9-b618-3336ef9540e9" name="Default Changelist" comment="" />
+    <list default="true" id="72b02b08-8a6b-42b9-b618-3336ef9540e9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,10 +33,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Other/HealthSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/CheckPointController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Movement/MovementController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveCharger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/SaveLoadManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Movement/MovementController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Movement/FixedButton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -50,6 +59,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Movement/FixedButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Movement/MovementController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/GrabController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/SaveLoadManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/CheckPointController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/UI/HealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveCharger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Other/HealthSystem.cs" />
       </list>
     </option>
   </component>
@@ -91,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601256155913</updated>
-      <workItem from="1601256163540" duration="15101000" />
+      <workItem from="1601256163540" duration="27073000" />
     </task>
     <servers />
   </component>
@@ -113,5 +128,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="944" y="381" width="670" height="676" key="search.everywhere.popup" timestamp="1601575597944">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="944" y="381" width="670" height="676" key="search.everywhere.popup/-1366.1160.1366.1024/0.0.2560.1440@0.0.2560.1440" timestamp="1601575597944" />
   </component>
 </project>
