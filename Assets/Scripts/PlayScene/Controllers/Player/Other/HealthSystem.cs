@@ -22,7 +22,7 @@ public class HealthSystem : MonoBehaviour
     {
         MaxCapacityValue = 100;
         CurrentHealthValue = 100;
-        DischargeHealthValue = 4;
+        DischargeHealthValue = 1;
         isDecharging = true;
         _healthBar.SetMaxHealth(MaxCapacityValue);
         DOTween.Init();

@@ -21,8 +21,19 @@
   <component name="ChangeListManager">
     <list default="true" id="72b02b08-8a6b-42b9-b618-3336ef9540e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Enviroment/Yellow.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/GrabController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/GrabController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveCharger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveCharger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Other/HealthSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Other/HealthSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Prefabs/Flare.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Prefabs/Flare.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +44,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Intro/StarShipController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Other/HealthSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/Destruction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/CheckPointController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Movement/MovementController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/EnergyMaker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveEnergyBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Settings/MoveUIElements.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBomb.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveCharger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/SaveLoadManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,13 +75,23 @@
         <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Movement/FixedButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Movement/MovementController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/GrabController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/SaveLoadManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/CheckPointController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/UI/HealthBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveCharger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/SaveLoadManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/CheckPointController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Other/HealthSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Settings/MoveUIElements.cs" />
+        <option value="$PROJECT_DIR$/Assets/Portal/PostProcessing/Runtime/Attributes/MinAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Intro/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Intro/StarShipController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveCharger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/GrabController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/Destruction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveEnergyBox.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBombBox.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/EnergyMaker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBomb.cs" />
       </list>
     </option>
   </component>
@@ -106,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601256155913</updated>
-      <workItem from="1601256163540" duration="27073000" />
+      <workItem from="1601256163540" duration="46799000" />
     </task>
     <servers />
   </component>

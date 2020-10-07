@@ -7,11 +7,9 @@ using UnityEngine;
 public class interactiveCharger : interactiveObject
 {
     private HealthSystem _healthSystem;
-    private bool used;
     private void Start()
     {
         _healthSystem = FindObjectOfType<HealthSystem>();
-        used = false;
         DOTween.Init();
     }
 
@@ -22,20 +20,15 @@ public class interactiveCharger : interactiveObject
 
     public override void Interact()
     {
-        if (!used)
-        {
-            _healthSystem.StartCharging();
-            used = true;
-            gameObject.GetComponent<MeshRenderer>().material.DOColor(Color.black, 1);
-            StartCoroutine(recharge());
-        }
+        _healthSystem.StartCharging();
+        StartCoroutine(recharge());
     }
 
     IEnumerator recharge()
     {
+        gameObject.GetComponent<MeshRenderer>().material.DOColor(Color.black, 1);
+        transform.DOScale(new Vector3(0,0,0), 1);
         yield return new WaitForSeconds(1);
-        gameObject.GetComponent<MeshRenderer>().material.DOColor(Color.yellow, 10);
-        yield return new WaitForSeconds(10);
-        used = false;
+        Destroy(gameObject);
     }
 }

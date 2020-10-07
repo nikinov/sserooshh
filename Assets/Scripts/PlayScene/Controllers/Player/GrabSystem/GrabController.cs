@@ -26,6 +26,7 @@ public class GrabController : MonoBehaviour
         [SerializeField] private GameObject ThrowButtonUI;
 
         private bool _grabbedThisFrame = false;
+        public bool _IsGrabbed {get { return _isGrabbed; }}
         private bool _isGrabbed = false;
         private bool isGrabClicked;
         private bool isDropClicked;
