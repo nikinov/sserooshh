@@ -55,16 +55,21 @@
               <e p="Enviroment" t="Include">
                 <e p="CheckPointController.cs" t="Include" />
                 <e p="Destruction.cs" t="Include" />
+                <e p="DoorPiece.cs" t="Include" />
                 <e p="EnergyMaker.cs" t="Include" />
+                <e p="Room1.cs" t="Include" />
               </e>
               <e p="Player" t="Include">
                 <e p="GrabSystem" t="Include">
                   <e p="GrabController.cs" t="Include" />
+                  <e p="Grabed.cs" t="Include" />
                   <e p="interactiveBomb.cs" t="Include" />
                   <e p="interactiveBombBox.cs" t="Include" />
                   <e p="interactiveBox.cs" t="Include" />
                   <e p="interactiveCharger.cs" t="Include" />
                   <e p="interactiveEnergyBox.cs" t="Include" />
+                  <e p="interactiveGravityBomb.cs" t="Include" />
+                  <e p="interactiveGravityBombBox.cs" t="Include" />
                   <e p="interactiveObject.cs" t="Include" />
                 </e>
                 <e p="Movement" t="Include">

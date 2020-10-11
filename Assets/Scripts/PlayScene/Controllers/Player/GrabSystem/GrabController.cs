@@ -34,8 +34,13 @@ public class GrabController : MonoBehaviour
 
         private bool isInRangeUI;
         private bool isInGrabUI;
+        private bool interactiveHasChanged;
         
         private Rigidbody _grabbedObj;
+        private interactiveObject interactive;
+        private GameObject interactiveGameObject;
+        private Grabed _grabed;
+        
 
         void Start()
         {
@@ -47,6 +52,7 @@ public class GrabController : MonoBehaviour
             ThrowButtonUI.SetActive(false);
             isInRangeUI = false;
             isInGrabUI = false;
+            //StartCoroutine(CullingMask());
         }
 
         void Update()
@@ -77,24 +83,6 @@ public class GrabController : MonoBehaviour
             {
                 DropItem();
             }
-            if (_isGrabbed)
-            {
-                if (!isInRangeUI)
-                {
-                    isInGrabUI = true;
-                    UIShowUp(DropButtonUI, UIFadeTime);
-                    UIShowUp(ThrowButtonUI, UIFadeTime);
-                }
-            }
-            else
-            {
-                if (isInRangeUI)
-                {
-                    isInGrabUI = false;
-                    UIShowUp(DropButtonUI, UIFadeTime, false);
-                    UIShowUp(ThrowButtonUI, UIFadeTime, false);
-                }
-            }
         }
 
         private void FixedUpdate()
@@ -114,9 +102,16 @@ public class GrabController : MonoBehaviour
             //Will check if we looking at some object in interactDistance
             if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hitInfo, interactDistance))
             {
+                interactive = hitInfo.collider.gameObject.GetComponent<interactiveObject>();
+                if (_isGrabbed && interactive == null)
+                {
+                    interactive = _grabbedObj.GetComponent<interactiveObject>();
+                }
                 //Every object with we can interact with need to have InteractiveObj component
-                interactiveObject interactive = hitInfo.collider.gameObject.GetComponent<interactiveObject>();
-
+                if (_isGrabbed)
+                {
+                    interactive = _grabbedObj.gameObject.GetComponent<interactiveObject>();
+                }
                 if (interactive != null && Vector3.SqrMagnitude(interactive.transform.position - transform.position) <= grabbableCheck)
                 {
                     if (!_isGrabbed)
@@ -206,7 +201,12 @@ public class GrabController : MonoBehaviour
                 _grabbedObj.useGravity = false; // to we can hold it
                 //grabbedObj.mass = 100000f; // So it would win in colisions.
                 //grabbedObj.transform.SetParent(transform); // to follow out position
-
+                _grabbedObj.GetComponent<Collider>().isTrigger = true;
+                _grabbedObj.gameObject.layer = LayerMask.NameToLayer("Owned");
+                _grabed = _grabbedObj.gameObject.AddComponent<Grabed>();
+                _grabed.OnColIn += NotShowUIInGrabbedMode;
+                _grabed.OnColOut += ShowUIInGrabbedMode;
+                ShowUIInGrabbedMode();
             }
         }
         public void DropItem()
@@ -214,7 +214,12 @@ public class GrabController : MonoBehaviour
             _isGrabbed = false;
             if (_grabbedObj != null)
             {
-
+                NotShowUIInGrabbedMode();
+                _grabed.OnColIn -= NotShowUIInGrabbedMode;
+                _grabed.OnColOut -= ShowUIInGrabbedMode;
+                Destroy(_grabbedObj.GetComponent<Grabed>());
+                _grabbedObj.GetComponent<Collider>().isTrigger = false;
+                _grabbedObj.gameObject.layer = LayerMask.NameToLayer("Default");
                 StopItem();
                 //Set all vars back to normal
                 //grabbedObj.mass = 1;
@@ -257,6 +262,23 @@ public class GrabController : MonoBehaviour
             else
             {
                 UIElement.SetActive(false);
+            }
+        }
+
+        private void ShowUIInGrabbedMode()
+        {
+            if (!DropButtonUI.activeSelf)
+            {
+                UIShowUp(DropButtonUI, UIFadeTime);
+                UIShowUp(ThrowButtonUI, UIFadeTime);
+            }
+        }
+        private void NotShowUIInGrabbedMode()
+        {
+            if (DropButtonUI.activeSelf)
+            {
+                UIShowUp(DropButtonUI, UIFadeTime, false);
+                UIShowUp(ThrowButtonUI, UIFadeTime, false);
             }
         }
 

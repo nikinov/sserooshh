@@ -6,14 +6,15 @@ using UnityEngine;
 public class Destruction : MonoBehaviour
 {
     public GameObject BreakVersion;
-    public GameObject ParentVersion;
     public float bForce;
+    private GameObject ParentVersion;
     private int active;
     private GrabController _grabController;
 
     private void Start()
     {
         _grabController = FindObjectOfType<GrabController>();
+        ParentVersion = FindObjectOfType<Room1>().gameObject;
     }
 
     private void OnCollisionEnter(Collision other)
