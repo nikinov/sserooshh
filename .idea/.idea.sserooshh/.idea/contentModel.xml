@@ -57,7 +57,8 @@
                 <e p="Destruction.cs" t="Include" />
                 <e p="DoorPiece.cs" t="Include" />
                 <e p="EnergyMaker.cs" t="Include" />
-                <e p="Room1.cs" t="Include" />
+                <e p="MakerTop.cs" t="Include" />
+                <e p="TopPiece.cs" t="Include" />
               </e>
               <e p="Player" t="Include">
                 <e p="GrabSystem" t="Include">
@@ -71,6 +72,7 @@
                   <e p="interactiveGravityBomb.cs" t="Include" />
                   <e p="interactiveGravityBombBox.cs" t="Include" />
                   <e p="interactiveObject.cs" t="Include" />
+                  <e p="interactiveUnboxerButton.cs" t="Include" />
                 </e>
                 <e p="Movement" t="Include">
                   <e p="FixedButton.cs" t="Include" />
@@ -89,6 +91,7 @@
               </e>
             </e>
             <e p="Managers" t="Include">
+              <e p="GameManager.cs" t="Include" />
               <e p="Player.cs" t="Include" />
               <e p="SaveLoadManager.cs" t="Include" />
               <e p="UIManager.cs" t="Include" />

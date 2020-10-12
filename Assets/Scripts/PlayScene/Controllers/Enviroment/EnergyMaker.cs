@@ -3,43 +3,37 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class EnergyMaker : MonoBehaviour
 {
-    [SerializeField] private GameObject Charger;
-    [SerializeField] private GameObject Bomb;
-    [SerializeField] private Transform tr;
+    [SerializeField] private Transform SpawnPlaceholder;
     private bool isMelting;
     private GrabController _grabController;
+    private GameManager _gameManager;
 
     private void Awake()
     {
         DOTween.Init();
         _grabController = FindObjectOfType<GrabController>();
+        _gameManager = FindObjectOfType<GameManager>();
     }
 
     private void OnCollisionEnter(Collision other)
     {
         if (!_grabController._IsGrabbed && !isMelting)
         {
-            if (other.gameObject.GetComponent<interactiveEnergyBox>() != null)
+            if (other.gameObject.GetComponent<interactiveObject>() != null)
             {
-                other.gameObject.GetComponent<interactiveEnergyBox>().EatMe();
-                GameObject go = Instantiate(Charger, tr.position, tr.rotation, tr);
-                go.transform.localScale = Vector3.zero;
-                go.transform.DOScale(new Vector3(1, 1, 1), 1);
-                StartCoroutine(wait());
+                if (other.gameObject.GetComponent<interactiveObject>().IsBox)
+                {
+                    other.gameObject.GetComponent<interactiveObject>().EatMe();
+                    GameObject go = Instantiate(_gameManager.Interactives[_gameManager.UnboxInteractivesNames.IndexOf(other.gameObject.GetComponent<interactiveObject>().gameObject.name.Replace("(Clone)", ""))], SpawnPlaceholder.position, SpawnPlaceholder.rotation, SpawnPlaceholder);
+                    go.transform.localScale = Vector3.zero;
+                    go.transform.DOScale(new Vector3(.75f, .75f, .75f), 1);
+                    StartCoroutine(wait());
+                }
             }
-            else if(other.gameObject.GetComponent<interactiveBombBox>() != null)
-            {
-                other.gameObject.GetComponent<interactiveBombBox>().EatMe();
-                GameObject go = Instantiate(Bomb, tr.position, tr.rotation, tr);
-                go.transform.localScale = Vector3.zero;
-                go.transform.DOScale(new Vector3(1, 1, 1), 1);
-                StartCoroutine(wait());
-                
-            }
-            
         }
     }
 

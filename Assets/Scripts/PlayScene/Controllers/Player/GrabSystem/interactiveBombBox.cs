@@ -15,25 +15,12 @@ public class interactiveBombBox : interactiveObject
     public interactiveBombBox()
     {
         IsGrabbable = true;
+        IsBox = true;
     }
 
     public override void Interact()
     {
         
-    }
-    
-    public void EatMe()
-    {
-        StartCoroutine(wait());
-    }
-
-    IEnumerator wait()
-    {
-        if(_grabController._IsGrabbed)
-            _grabController.DropItem();
-        transform.DOScale(new Vector3(0, 0, 0), .7f);
-        yield return new WaitForSeconds(.7f);
-        Destroy(gameObject);
     }
 }
 

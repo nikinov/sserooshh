@@ -7,14 +7,12 @@ public class Destruction : MonoBehaviour
 {
     public GameObject BreakVersion;
     public float bForce;
-    private GameObject ParentVersion;
     private int active;
     private GrabController _grabController;
 
     private void Start()
     {
         _grabController = FindObjectOfType<GrabController>();
-        ParentVersion = FindObjectOfType<Room1>().gameObject;
     }
 
     private void OnCollisionEnter(Collision other)
@@ -22,7 +20,7 @@ public class Destruction : MonoBehaviour
         if (other.gameObject.GetComponent<Rigidbody>().velocity.magnitude > bForce && active == 0 && other.gameObject.tag == "CanDestroy" && !_grabController._IsGrabbed)
         {
             active+=1;
-            GameObject go = Instantiate(BreakVersion, transform.position, transform.rotation, ParentVersion.transform);
+            GameObject go = Instantiate(BreakVersion, transform.position, transform.rotation, gameObject.transform.parent);
             other.gameObject.GetComponent<Rigidbody>().AddExplosionForce(10f, Vector3.zero, 0f);
             Destroy(gameObject);
         }

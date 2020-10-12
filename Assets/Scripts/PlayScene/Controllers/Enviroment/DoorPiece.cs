@@ -31,7 +31,6 @@ public class DoorPiece : MonoBehaviour
             {
                 foreach (Transform child in parent)
                 {
-                    print(child.name);
                     StartCoroutine(child.GetComponent<DoorPiece>().wait());
                 }
                 StartCoroutine(waitMaster());
@@ -41,7 +40,6 @@ public class DoorPiece : MonoBehaviour
 
     public IEnumerator wait()
     {
-        print("aa");
         WasActivated = true;
         transform.DOMove(OriginalPossition, 1);
         transform.DORotate(OriginalRotation, 1);
@@ -50,7 +48,7 @@ public class DoorPiece : MonoBehaviour
     public IEnumerator waitMaster()
     {
         yield return new WaitForSeconds(1);
-        Instantiate(NormalDoor, FindObjectOfType<Room1>().transform);
+        Instantiate(NormalDoor, transform.parent.parent);
         Destroy(parent.gameObject);
     }
 }
