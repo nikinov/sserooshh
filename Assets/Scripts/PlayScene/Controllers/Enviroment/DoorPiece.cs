@@ -33,7 +33,7 @@ public class DoorPiece : MonoBehaviour
                 {
                     StartCoroutine(child.GetComponent<DoorPiece>().wait());
                 }
-                StartCoroutine(waitMaster());
+                StartCoroutine(waitMaster(other.gameObject));
             }
         }
     }
@@ -45,10 +45,12 @@ public class DoorPiece : MonoBehaviour
         transform.DORotate(OriginalRotation, 1);
         yield return new WaitForSeconds(1);
     }
-    public IEnumerator waitMaster()
+    public IEnumerator waitMaster(GameObject other)
     {
+        other.transform.DOScale(Vector3.zero, .75f);
         yield return new WaitForSeconds(1);
         Instantiate(NormalDoor, transform.parent.parent);
+        Destroy(other);
         Destroy(parent.gameObject);
     }
 }

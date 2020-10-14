@@ -6,27 +6,33 @@ using UnityEngine;
 
 public class MakerTop : MonoBehaviour
 {
+    public bool isShowing;
     [SerializeField] private GameObject PlaceHolder2;
     [SerializeField] private GameObject PlaceHolder3;
     [SerializeField] private GameObject PlaceHolder4;
     private bool isOnIt;
-    private bool isShowing;
     private GameManager _gameManager;
     private GameObject CurrentlyShowingObject;
+    public delegate void ShowingAction();
+    public event ShowingAction OnShowing;
+    public delegate void StopShowingAction();
+    public event StopShowingAction OnStopShowing;
+    [HideInInspector] public int ObjectsOnTop;
     private void Awake()
     {
         _gameManager = FindObjectOfType<GameManager>();
         DOTween.Init();
         isShowing = false;
+        ObjectsOnTop = 0;
     }
 
     private void OnCollisionEnter(Collision other)
     {
+        ObjectsOnTop += 1;
         if (!isShowing)
         {
             if (other.gameObject.GetComponent<interactiveObject>() != null)
             {
-                print("ddd");
                 StartCoroutine(CheckForStay(other.gameObject));
             }
         }
@@ -34,21 +40,29 @@ public class MakerTop : MonoBehaviour
 
     private void OnCollisionExit(Collision other)
     {
-        print("bebe");
-        if (isShowing)
+        if (ObjectsOnTop == 1)
         {
-            if (isOnIt)
+            ObjectsOnTop -= 1;
+            if (isShowing)
             {
-                StartCoroutine(waitForOnIt(other.gameObject));
-            }
-            else
-            {
-                if (other.gameObject.name == _gameManager.UnboxInteractivesNames[_gameManager.InteractivesNames.IndexOf(CurrentlyShowingObject.name.Replace("(Clone)", ""))])
+                if (isOnIt)
                 {
-                    isShowing = false;
-                    StartCoroutine(ShowEndWait(CurrentlyShowingObject, PlaceHolder2));
+                    StartCoroutine(waitForOnIt(other.gameObject));
+                }
+                else
+                {
+                    if(CurrentlyShowingObject != null)
+                    {
+                        isShowing = false;
+                        OnStopShowing();
+                        StartCoroutine(ShowEndWait(CurrentlyShowingObject, PlaceHolder2));
+                    }
                 }
             }
+        }
+        else
+        {
+            ObjectsOnTop -= 1;
         }
     }
 
@@ -56,6 +70,7 @@ public class MakerTop : MonoBehaviour
     {
         StartCoroutine(ShowEndWait(CurrentlyShowingObject, PlaceHolder3));
         Instantiate(_gameManager.FracturedUnboxerTop, gameObject.transform.position, gameObject.transform.rotation, gameObject.transform.parent);
+        ObjectsOnTop -= 1;
         gameObject.SetActive(false);
     }
 
@@ -63,6 +78,7 @@ public class MakerTop : MonoBehaviour
     {
         CurrentlyShowingObject = Instantiate(_gameManager.Interactives[_gameManager.UnboxInteractivesNames.IndexOf(objectBoxForDisplay.name)], PlaceHolder2.transform.position, PlaceHolder2.transform.rotation, PlaceHolder2.transform);
         StartCoroutine(ShowStartWait(CurrentlyShowingObject));
+        OnShowing();
     }
 
     IEnumerator CheckForStay(GameObject other)
@@ -77,7 +93,6 @@ public class MakerTop : MonoBehaviour
                 DisplayItem(other.gameObject);
             }
         }
-        print("aaa");
         yield return new WaitForSeconds(.5f);
     }
 
@@ -107,19 +122,17 @@ public class MakerTop : MonoBehaviour
     IEnumerator waitForOnIt(GameObject other)
     {
         yield return new WaitForSeconds(.5f);
-        if (other.name == _gameManager.UnboxInteractivesNames[_gameManager.InteractivesNames.IndexOf(CurrentlyShowingObject.name.Replace("(Clone)", ""))])
+        if (_gameManager.UnboxInteractivesNames[
+            _gameManager.InteractivesNames.IndexOf(CurrentlyShowingObject.name.Replace("(Clone)", ""))] != null)
         {
-            isShowing = false;
-            StartCoroutine(ShowEndWait(CurrentlyShowingObject, PlaceHolder2));
+            if (other.name == _gameManager.UnboxInteractivesNames[_gameManager.InteractivesNames.IndexOf(CurrentlyShowingObject.name.Replace("(Clone)", ""))])
+            {
+                isShowing = false;
+                StartCoroutine(ShowEndWait(CurrentlyShowingObject, PlaceHolder2));
+            }
         }
     }
 }
-
-
-
-
-
-
 
 
 

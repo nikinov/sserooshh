@@ -20,42 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72b02b08-8a6b-42b9-b618-3336ef9540e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sserooshh/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Room1/Generator.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Room1/Generator/Cable.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Room1/Generator/Cable.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Room1/Generator/GoxUpper.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Room1/Generator/GoxUpper.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Room1/Generator/Lava.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Room1/Generator/Lava.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Room1/Generator/Light.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Room1/Generator/Light.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Room1/Generator/LightBox.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Room1/Generator/LightBox.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Room1/Generator/LightRing.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Room1/Generator/LightRing.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Unboxer2/BlueGlow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Enviroment/Unboxer2/BlueGlow.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Unboxer2/EmmisiveMetal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Enviroment/Unboxer2/EmmisiveMetal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enviroment/Unboxer2/YellowGlow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Enviroment/Unboxer2/YellowGlow.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayScene/Bomb.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayScene/Bomb.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayScene/Charger.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayScene/Charger.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayScene/FracturesDoor.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayScene/FracturesDoor.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayScene/NormalDoor.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayScene/NormalDoor.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScene.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScene.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Room1.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FBX/Room1.fbx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScene/LightingData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/DoorPiece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/DoorPiece.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/EnergyMaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/EnergyMaker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBombBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBombBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveEnergyBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveEnergyBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveGravityBombBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveGravityBombBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/MakerTop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/MakerTop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveUnboxerButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveUnboxerButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,29 +38,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Intro/StarShipController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Other/HealthSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/Destruction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveGravityBombBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/EnergyMaker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveEnergyBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Intro/StarShipController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/DoorPiece.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBomb.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/SaveLoadManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/Grabed.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/CheckPointController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/TopPiece.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/MakerTop.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Movement/MovementController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveUnboxerButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Settings/MoveUIElements.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Movement/MovementController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/CheckPointController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveGravityBombBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveCharger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Movement/FixedButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/Destruction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBomb.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/SaveLoadManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/MakerTop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/Other/HealthSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/EnergyMaker.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -112,7 +84,6 @@
         <option value="$PROJECT_DIR$/Assets/Portal/PostProcessing/Runtime/Attributes/MinAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Intro/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Intro/StarShipController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveCharger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBomb.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/Grabed.cs" />
@@ -122,15 +93,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/Destruction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBombBox1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveUnboxerButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/MakerTop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveEnergyBox.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveBombBox.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveGravityBombBox.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/EnergyMaker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/DoorPiece.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/TopPiece.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Player/GrabSystem/interactiveUnboxerButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Managers/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/DoorPiece.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Controllers/Enviroment/MakerTop.cs" />
       </list>
     </option>
   </component>
@@ -175,6 +147,7 @@
       <workItem from="1601256163540" duration="61936000" />
       <workItem from="1602387569809" duration="10511000" />
       <workItem from="1602404237588" duration="124000" />
+      <workItem from="1602562218044" duration="6572000" />
     </task>
     <servers />
   </component>
@@ -199,6 +172,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="100" y="100" width="2360" height="1240" key="VCS.FileHistoryDialog" timestamp="1602563351557">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="100" y="100" width="2360" height="1240" key="VCS.FileHistoryDialog/-1366.1160.1366.1024/0.0.2560.1440@0.0.2560.1440" timestamp="1602563351557" />
     <state x="944" y="381" width="672" height="676" key="search.everywhere.popup" timestamp="1602393396696">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

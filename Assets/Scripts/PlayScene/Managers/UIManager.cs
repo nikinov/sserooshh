@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
@@ -8,6 +9,7 @@ public class UIManager : MonoBehaviour
     
     [SerializeField] private GameObject SettingsPanelUI;
     [SerializeField] private GameObject PlayPanelUI;
+    [SerializeField] private TextMeshProUGUI WorningUI;
     
     public delegate void OnSave();
     public event OnSave Save;
@@ -17,6 +19,7 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         SettingsPanelUI.SetActive(false);
+        WorningUI.gameObject.SetActive(false);
     }
 
     public void OpenSettings()
@@ -41,5 +44,18 @@ public class UIManager : MonoBehaviour
     {
         if(Reset != null)
             Reset();
+    }
+
+    public void DisplayWorning(String WarningText)
+    {
+        StartCoroutine(WaitForDisplayWorning(WarningText));
+    }
+
+    IEnumerator WaitForDisplayWorning(String Worningtext)
+    {
+        WorningUI.gameObject.SetActive(true);
+        WorningUI.text = Worningtext;
+        yield return new WaitForSeconds(2f);
+        WorningUI.gameObject.SetActive(false);
     }
 }
